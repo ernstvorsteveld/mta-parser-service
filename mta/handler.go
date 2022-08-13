@@ -1,4 +1,4 @@
-package sta
+package mta
 
 import (
 	"bufio"
@@ -44,8 +44,8 @@ func listener(ch chan common.FilenameMessage) {
 	}
 }
 
-func handle(c common.FilenameMessage) {
-	file, err := os.Open(c.Dst)
+func handle(m common.FilenameMessage) {
+	file, err := os.Open(m.Dst)
 	if err != nil {
 		log.Fatal(err)
 	}

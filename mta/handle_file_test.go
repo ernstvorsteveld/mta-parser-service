@@ -1,4 +1,4 @@
-package sta
+package mta
 
 import (
 	"log"
@@ -7,7 +7,7 @@ import (
 )
 
 func Test_read_complete_file(t *testing.T) {
-	file, err := os.Open("bunq.sta")
+	file, err := os.Open("bunq.mta")
 	if err != nil {
 		log.Fatal(err)
 	}
