@@ -1,0 +1,39 @@
+= Generic documentation
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 4
+
+
+== Install
+
+.Installation of project
+[source,bash]
+----
+# create module
+go mod init github.com/ernstvorsteveld/mta-parser-service
+
+# Add gin-gonic dependency
+go get -u github.com/gin-gonic/gin
+
+# Add cors library
+go get github.com/gin-contrib/cors
+
+----
+
+== Run tests
+
+.Run all test
+[source,bash]
+----
+go test ./...
+----
+
+== Coverage
+
+.Test with coverage and view the coverage
+[source,bash]
+----
+go test -cover -coverprofile=prof.out ./...
+
+go tool cover -html=prof.out
+----

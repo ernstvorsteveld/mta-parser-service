@@ -1,0 +1,15 @@
+= MT940
+:toclevels: 4
+:sectnums:
+:sectnumlevels: 4
+
+== Specification
+
+.MT940 details
+[header, cols="1,2"]
+|===
+
+|
+|
+
+|===
